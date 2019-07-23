@@ -1,0 +1,16 @@
+---
+
+- name: systemd | restart teleport
+  systemd:
+    name: teleport
+    state: restarted
+    daemon_reload: true
+  listen: restart teleport
+  when: ansible_service_mgr == 'systemd'
+
+- name: sysinit & upstart | restart teleport
+  service:
+    name: teleport
+    state: restarted
+  listen: restart teleport
+  when: ansible_service_mgr != 'systemd'
