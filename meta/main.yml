@@ -1,7 +1,6 @@
 galaxy_info:
-  author: Adam Papai
+  author: Agnesius Santo Naibaho
   description: An Ansible role for installing Teleport cluster.
-  company: "CloudBees Inc."
   license: "license (BSD, MIT)"
   
   min_ansible_version: 2.4
