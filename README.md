@@ -21,8 +21,8 @@ You will need to provide your own SSL certificate and key files. You can generat
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    teleport_version: "2.3.5"
-    teleport_url: "https://github.com/gravitational/teleport/releases/download/v{{ teleport_version }}/teleport-v{{ teleport_version }}-linux-amd64-bin.tar.gz"
+    teleport_version: "4.0.2"
+    teleport_url: "https://get.gravitational.com/teleport-v{{ teleport_version }}-linux-amd64-bin.tar.gz"
     teleport_ssl_cert_path: "/etc/teleport"
     teleport_config_path: "/etc/teleport.yaml"
     teleport_nodename: "teleport"
